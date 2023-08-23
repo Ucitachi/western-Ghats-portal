@@ -1,0 +1,27 @@
+/* NavigationBar Component Styles */
+
+.custom-navbar {
+    height: 80px; /* Adjust the height as needed */
+    background-color: rgb(239, 175, 130);
+    top: 0px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .navbar-logo {
+    width: 40px; /* Adjust the logo width as needed */
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  .font-size
+  {
+    font-size: larger;
+    font-weight: bold;
+  }
+.navlink
+{
+    margin-right: 10px;
+}
+  
