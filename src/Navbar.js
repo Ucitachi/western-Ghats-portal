@@ -7,7 +7,7 @@ const NavigationBar = () => {
     <Navbar className="custom-navbar" variant="dark" expand="lg">
       <Navbar.Brand href="#home">
         <img
-          src="./images/brand1.png"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdH2vik2evLSWhOh5IYlG9sPF3sWXMIp1ZVOq0bOK0lchh3SXLvGll6shJJ7lecVfB1KA&usqp=CAU"
           alt="Farewell Event Logo"
           className="navbar-logo ml-4"
         />

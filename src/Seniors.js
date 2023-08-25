@@ -1,6 +1,7 @@
    
     
-    import React, { useState } from 'react';
+import React, { useState } from 'react';
+import './FarewellPage.css';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 
 
@@ -9,66 +10,13 @@ const Seniors = () => {
 
   const seniors = [
     // ... (your data)
-    { name: 'Abhijeet', image: './images/abhijit.jpg', price: 'price :0 ' },
-    { name: 'Abhishek', image: './images/abhishek.jpg', price: 'price : 0' },
-    { name: 'Aditya paul', image: './images/aditya_paul.jpg', price: 'price:0' },
-    { name: 'Aditya Raj', image: './images/aditya.jpg', price: 'price:0' },
-    { name: 'Aiman', image: './images/aiman.jpg', price: 'price:0' },
-    { name: 'Ajay', image: './images/ajay.jpg', price: 'price: 09' },
-    { name: 'Ankitha', image: './images/ankita.jpg', price: 'price: 03' },
-    { name: 'Anup', image: './images/anup.jpg', price: 'price:0' },
-    { name: 'Ashok Kumar', image: './images/Ashoka.jpg', price: 'price:0' },
-    { name: 'Ashok mahala', image: './images/ashokc.jpg', price: 'price:  08' },
-    { name: 'Ayush', image: './images/Ayush.jpg', price: 'price: 04' },
-    { name: 'Chetan', image: './images/chetan.jpg', price: 'price:0' },
-    { name: 'Chhaya', image: './images/chaya.jpg', price: 'price:0' },
-    { name: 'Darshan', image: './images/darshan.jpg', price: 'price: 02' },
-    { name: 'Deep narayan', image: './images/deepun.jpg', price: 'price:0' },
-    { name: 'Deepu', image: './images/deepu.jpg', price: 'price: 08' },
-    { name: 'Divya', image: './images/divya.jpg', price: 'price: 09' },
-    { name: 'G Janaki', image: './images/gjanaki.jpg', price: 'price:0' },
-    { name: 'Gandluri Navya', image: './images/navya.jpg', price: 'price:0' },
-    { name: 'Hrithik', image: './images/hritik.jpg', price: 'price:0' },
-    { name: 'K Hindu', image: './images/hindu.jpg', price: 'price:0' },
-    { name: 'Kushalappa', image: './images/kushalappa.jpg', price: 'price:0' },
-    { name: 'Lakshmi', image: './images/lakshmi.jpg', price: 'price:0' },
-    { name: 'Lavanya', image: './images/lavanya.jpg', price: 'price: 06' },
-    { name: 'Likhitha', image: './images/likhita.jpg', price: 'price: 03' },
-    { name: 'Madasa Akanksha', image: './images/madasa.jpg', price: 'price:0' },
-    { name: 'Mahendra', image: './images/mahendra.jpg', price: 'price:0' },
-    { name: 'Manasi', image: './images/manasi.jpg', price: 'price:0' },
-    { name: 'Manohar', image: './images/manohar.jpg', price: 'price:0' },
-    { name: 'Zaheen', image: './images/zahin.jpg', price: 'price:  07' },
-    { name: 'Wasim', image: './images/wasim.jpg', price: 'price:0' },
-    { name: 'Monisha', image: './images/monisha.jpg', price: 'price:0' },
-    { name: 'Mounika', image: './images/monika.jpg', price: 'price:0' },
-    { name: 'Neha', image: './images/neha.jpg', price: 'price: 10' },
-    { name: 'Nehal', image: './images/nehal.jpg', price: 'price: 03' },
-    { name: 'Nikhil', image: './images/nikhil.jpg', price: 'price:0' },
-    { name: 'Niranjan', image: './images/Niranjan.jpg', price: 'price:0' },
-    { name: 'Nisha', image: './images/nisha.jpg', price: 'price:0' },
-    { name: 'Prajwal', image: './images/prajwal.jpg', price: 'price:0' },
-    { name: 'Priya', image: './images/priya.jpg', price: 'price:  03' },
-    { name: 'Ramesh', image: './images/ram.jpg', price: 'price:  07' },
-    { name: 'Reena', image: './images/reena.jpg', price: 'price:0' },
-    { name: 'Reshma', image: './images/reshma.jpg', price: 'price:  03' },
-    { name: 'Sadath', image: './images/sadat.jpg', price: 'price:0' },
-    { name: 'Sahana', image: './images/sahana.jpg', price: 'price:  10' },
-    { name: 'Sonam', image: './images/sonam.jpg', price: 'price: 1' },
-    { name: 'Sharat', image: './images/sharat.jpg', price: 'price:  05' },
-    { name: 'Sharmila', image: './images/sharmila.jpg', price: 'price:0' },
-    { name: 'Shashank', image: './images/shashank.jpg', price: 'price:0' },
-    { name: 'Shonit', image: './images/Sonit.jpg', price: 'price:0' },
-    { name: 'Shravan', image: './images/shravan.jpg', price: 'price:  04' },
-    { name: 'Sheyans', image: './images/shreyas.jpg', price: 'price:  03' },
-    { name: 'Shubham', image: './images/Shubam.jpg', price: 'price:  06' },
-    { name: 'Shweta', image: './images/shweata.jpg', price: 'price:0' },
-    { name: 'Simran', image: './images/simran.jpg', price: 'price:  07' },
-    { name: 'Smriti', image: './images/smriti.jpg', price: 'price:0' },
-    { name: 'Swapnil', image: './images/swapnil.jpg', price: 'price:0' },
-    { name: 'Varshitha', image: './images/varshita.jpg', price: 'price: 02' },
-    { name: 'Vasantha', image: './images/vasanta.jpg', price: 'price:  05' },
-    { name: 'Y Swetha', image: './images/swata.jpg', price: 'price:  11' },
+    { name: 'Least-Concern', image: './images/abhijit.jpg', price: 'price :0 ' },
+    { name: 'Near-Threatened', image: './images/abhishek.jpg', price: 'price : 0' },
+    { name: 'Vulnerable', image: './images/aditya_paul.jpg', price: 'price:0' },
+    { name: 'Endangered', image: './images/aditya.jpg', price: 'price:0' },
+    { name: 'Critically-Endangered', image: './images/aiman.jpg', price: 'price:0' },
+    { name: 'Extinct', image: './images/ajay.jpg', price: 'price: 09' },
+   
   ];
 
   const handleCardClick = (index) => {
@@ -79,17 +27,25 @@ const Seniors = () => {
     }
   };
 
-  
+  //<section> element is a standard HTML element used to create separate sections or divisions within a webpage. 
+  //A <Container> component from Bootstrap is used to contain the content within the section. It helps in managing the layout and responsive design.
+  //A <Row> component is used to create a row of columns. The class justify-content-center centers the columns horizontally within the row.
+  //Within this loop, it seems that the code is mapping over an array called seniors. For each senior in the array, it's creating a Bootstrap <Col> (column) component. 
+  //The key attribute is set to the index of the map to help React keep track of the elements
+  //<Card> component used to display content in a card-like format. 
+  //The className attribute conditionally applies the class "senior-card active" if the current index is included in the activeCards array (not shown in this code). 
+  //This is a common technique to dynamically apply styles based on certain conditions.the includes function if the index exists or not.
+
   return (
     <section id="seniors" className="py-5">
       <Container>
-        <h2 className="text-center mb-4">Biddings</h2>
+        <h2 className="text-center mb-4">Red-list on Western Ghats</h2>
         <Row className="justify-content-center">
           {seniors.map((senior, index) => (
-            <Col key={index} xs={6} md={3} lg={2} className="mb-3">
+            <Col key={index} xs={4} md={4} lg={4} className=" mb-5">     
               <Card
                 className={`senior-card ${activeCards.includes(index) ? 'active' : ''}`}
-                onClick={() => handleCardClick(index)}
+                onClick={() => handleCardClick(index)} 
               >
                 <Card.Img
                   variant="top"
@@ -99,7 +55,7 @@ const Seniors = () => {
                 />
                 <Card.Body className="text-center">
                   <Card.Title className='name'>{senior.name}</Card.Title>
-                  <Card.Text className='pri'>{senior.price}</Card.Text>
+                  {/* <Card.Text className='pri'>{senior.price}</Card.Text> */}
                 </Card.Body>
               </Card>
             </Col>
