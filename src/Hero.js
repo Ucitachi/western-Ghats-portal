@@ -4,7 +4,7 @@ function Hero() {
     return (
         <>
         <div className="home-container   d-flex  justify-content-center align-items-center" id='home'>
-            <h1 className='vibrate'>Welcome to the Farewell </h1><br></br>
+            <h1 className='vibrate'>IUCN Redlist on Western Ghats</h1><br></br>
         </div>
         <div className='body'>
               <h3> <span>MSRIT    </span>Department of MCA | 2021-2023</h3><br></br>
