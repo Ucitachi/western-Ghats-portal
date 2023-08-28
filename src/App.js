@@ -6,6 +6,7 @@ import Hero from './Hero';
 import Seniors from './Seniors';
 import Game from './Game';
 import Contact from './Contact';
+import ImageComponent from './tiger';
 
 function App() {
   return (

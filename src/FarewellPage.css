@@ -28,3 +28,23 @@
   .ind_col{
     height: 40px;;
   }
+
+
+/* ImageComponent.css */
+.fullscreen-image {
+  width: 100vw; /* 100% of viewport width */
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.cropped-image {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+}
+
