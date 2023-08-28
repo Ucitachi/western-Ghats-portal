@@ -31,7 +31,8 @@ pool.getConnection((err, connection) => {
 
 const columnName = 'species_name'; // Replace with the actual column name
 const tableName = 'species'; // Replace with the actual table name
-const query = `SELECT ${columnName} FROM ${tableName}`;
+const diet = 'diet';
+const query = `SELECT ${columnName} FROM ${tableName} WHERE ${diet} = "carnivore" `;
 
 pool.query(query, (error, results) => {
     if (error) {
@@ -41,4 +42,4 @@ pool.query(query, (error, results) => {
     console.log('Fetched data:', results);
   });
 
-module.exports = client;
+

@@ -1,0 +1,75 @@
+/* NavigationBar Component Styles */
+
+/* .custom-navbar {
+    height: 80px; Adjust the height as needed */
+    /* background-color: rgb(239, 175, 130);
+    top: 0px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .navbar-logo {
+    width: 40px; Adjust the logo width as needed */
+    /* height: auto;
+    margin-right: 10px;
+  }
+  
+  .font-size
+  {
+    font-size: larger;
+    font-weight: bold;
+  }
+.navlink
+{
+    margin-right: 10px;
+} */
+
+.nature-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: hsl(120, 91%, 9%); /* Dark green background */
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 20px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #FFC857; /* Yellow color for hover effect */
+}
+
+/* More nature-themed styles */
+.nav-links li:nth-child(odd) {
+  transform: translateY(-10px); /* Slight upward shift for odd items */
+  opacity: 0.7;
+}
+
+.nature-icon {
+  font-size: 18px;
+  margin-right: 5px;
+}
+
