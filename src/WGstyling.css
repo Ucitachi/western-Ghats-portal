@@ -1,0 +1,98 @@
+/* FarewellPage.css */
+.prizes {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .prize-display {
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .gold {
+    background-color: gold;
+  }
+  
+  .silver {
+    background-color: silver;
+  }
+  
+  .bronze {
+    background-color: #cd7f32;
+  }
+  
+  .ind_col{
+    height: 40px;;
+  }
+
+.text_on_Tigerimage{
+  position:absolute;
+  color: whitesmoke;
+}
+
+.home-container{
+  justify-content:center;
+  align-items:center;
+
+}
+
+/* ImageComponent.css */
+.fullscreen-image {
+  width: 100vw; /* 100% of viewport width */
+  height: 35vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.cropped-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-form {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  width: 300px;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 3px;
+  cursor: pointer;
+}
