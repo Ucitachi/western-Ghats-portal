@@ -12,8 +12,8 @@ const mysql = require('mysql2');
 const pool = mysql.createPool({
   host: 'localhost', // Change to your XAMPP MySQL host
   user: 'root',      // MySQL username
-  password: '', // MySQL password
-  database: 'western_ghats', // MySQL database name
+  password: 'Gambling@24', // MySQL password
+  database: 'Local instance MySQL80', // MySQL database name
   connectionLimit: 10 // Number of connections in the pool
 });
 
@@ -29,17 +29,17 @@ pool.getConnection((err, connection) => {
   connection.release();
 });
 
-const columnName = 'species_name'; // Replace with the actual column name
-const tableName = 'species'; // Replace with the actual table name
-const diet = 'diet';
-const query = `SELECT ${columnName} FROM ${tableName} WHERE ${diet} = "carnivore" `;
+// const columnName = 'species_name'; 
+// const tableName = 'species'; 
+// const diet = 'diet';
+// const query = `SELECT ${columnName} FROM ${tableName} WHERE ${diet} = "carnivore" `;
 
-pool.query(query, (error, results) => {
-    if (error) {
-      console.error('Error executing query:', error);
-      return;
-    }
-    console.log('Fetched data:', results);
-  });
+// pool.query(query, (error, results) => {
+//     if (error) {
+//       console.error('Error executing query:', error);
+//       return;
+//     }
+//     console.log('Fetched data:', results);
+//   });
 
 
